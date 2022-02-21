@@ -1,0 +1,126 @@
+{
+    "info": {
+        "_postman_id": "1815aa00-bee6-42ef-ba6d-e2cfd7fb3fb0",
+        "name": "hall-booking",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "home",
+            "id": "f4019b8d-06d6-47f9-b98d-165716328aa2",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "description": "# Hall-Booking API\n\nCreate a endpoints to\n\n*   booking a hall\n*   get list all rooms with booked data\n*   list all customers with booked data\n    \n\n## ENDPOINTS\n\n*   ### To book\n    \n    *   /room/:roomId\n*  ### To get all bookings\n    *   /bookings\n*  ### To get all room\n    *   /roooms\n*  ### To get all customers\n    \n    *   /customers"
+            },
+            "response": []
+        },
+        {
+            "name": "rooms",
+            "id": "a257bc6b-dca2-4271-8d15-bbad6a11d349",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/rooms",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "rooms"
+                    ]
+                },
+                "description": "###### **Get all Rooms with booked data**"
+            },
+            "response": []
+        },
+        {
+            "name": "getBookings",
+            "id": "785b3655-b8a7-479b-a5b7-38f04747c587",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/bookings",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "bookings"
+                    ]
+                },
+                "description": "###### To get all booking data"
+            },
+            "response": []
+        },
+        {
+            "name": "customers",
+            "id": "20c53bc7-d944-4f77-9315-b9d47a3a9751",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/customers",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "customers"
+                    ]
+                },
+                "description": "###### To get all customer Data"
+            },
+            "response": []
+        },
+        {
+            "name": "booking",
+            "id": "95262522-79ad-4860-96b5-bbe537b1fb35",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/rooms",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "rooms"
+                    ]
+                },
+                "description": "###### To book a room"
+            },
+            "response": []
+        }
+    ]
+}
