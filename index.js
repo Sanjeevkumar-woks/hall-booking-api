@@ -5,7 +5,7 @@ app.use(express.json());
 
 //Home Route
 app.get('/',(req,res)=>{
-    res.send('Welcome to S M Hall Booking Api');
+    res.sendFile(path.join(__dirname,'/index.html'));
 });
 
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
