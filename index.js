@@ -5,7 +5,7 @@ app.use(express.json());
 
 //Home Route
 app.get('/',(req,res)=>{
-    res.sendFile('G:\\hall-booking-master\\index.html');
+    res.sendFile('\\index.html');
 });
 
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
