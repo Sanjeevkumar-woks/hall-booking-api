@@ -1,13 +1,15 @@
 import express from "express";
-import path from 'path';
+
 const app=express();
 const PORT=process.env.PORT || 9000;
 app.use(express.json());
 
 //Home Route
-app.get('/', function(req, res) {
-   res.sendFile('.\\index.html');
-});
+app.get('/', (req,res)=>{
+  fs.readFile('index.html', 'utf-8', (err,data)=>{
+    err? res.send(err) : res.send(data)
+  })
+})
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
 
 // ROOMS DATA
