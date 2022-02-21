@@ -1,11 +1,12 @@
 import express from "express";
 const app=express();
+const path = require('path');
 const PORT=process.env.PORT || 9000;
 app.use(express.json());
 
 //Home Route
 app.get('/',(req,res)=>{
-   res.sendFile(path.join(__dirname, '//index.html'));
+   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
