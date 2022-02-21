@@ -6,7 +6,7 @@ app.use(express.json());
 
 //Home Route
 app.get('/', function(req, res) {
-   res.sendFile('index.html');
+   res.sendFile('.\\index.html');
 });
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
 
