@@ -6,7 +6,7 @@ app.use(express.json());
 
 //Home Route
 app.get('/',(req,res)=>{
-   res.sendFile(path.join('/index.html'));
+   res.sendFile('public/index1.html' , { root : __dirname});
 });
 
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
