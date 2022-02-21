@@ -5,10 +5,9 @@ const PORT=process.env.PORT || 9000;
 app.use(express.json());
 
 //Home Route
-app.get('/',(req,res)=>{
-   res.sendFile('public/index1.html' , { root : __dirname});
+app.get('/', function(req, res) {
+   res.sendFile('index.html');
 });
-
 app.listen(PORT,()=>console.log("Server is Up and Running On",PORT));
 
 // ROOMS DATA
