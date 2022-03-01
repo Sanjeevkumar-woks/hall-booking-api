@@ -2,7 +2,7 @@
 Create hall booking app endpoints API by using node js.
 
 # Hall-Booking API
-### BASE URL https://sk-hall-booking.herokuapp.com/
+### BASE URL https://sm-hall-booking-api.herokuapp.com/
 
 - [Documentaion](https://documenter.getpostman.com/view/18458042/UVREj4T4)
 
