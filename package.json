@@ -13,7 +13,7 @@
     "node",
     "example"
   ],
-  "author": "Sathish Kumar S",
+  "author": "Sanjeev Kumar M",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
